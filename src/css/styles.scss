@@ -1,0 +1,88 @@
+@import "~leaflet/dist/leaflet.css";
+@import "~bootstrap/dist/css/bootstrap.css";
+
+@import 'mixins';
+@import 'loader';
+@import 'checkboxToggle';
+@import '../app/components/header/header';
+
+
+/*
+@import '../app/header/header.component';
+@import '../app/aside/aside.component';
+@import '../app/widgets/widgetContainer';
+*/
+@import 'theme';
+
+
+body {
+    overflow: hidden; //font-family:'Open Sans', sans-serif;
+    background: white;
+    margin: 0px;
+}
+
+#main {
+    width: 100vw;
+    height: calc(100vh - 56px);
+    margin-top: 56px;
+    overflow: hidden;
+    position: relative;
+    background: white;
+    #viewDiv {
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+    #aside {
+        z-index: 10;
+    }
+}
+
+#footer {
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+/*
+.form-control,
+.btn,
+.input-group-text {
+    @include border-radius(0);
+}
+*/
+.basemapContainer {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    max-height: calc(100% - 30px);
+    transition: right .5s;
+    &.hidden {
+        right: -250px;
+    }
+}
+.esri-ui-inner-container{
+    bottom: 15px!important;
+}
+
+.ui-datepicker{
+    z-index: 99999!important;
+}
+
+.dataTables_wrapper > .row > div {
+    max-width: 100%;
+}
+
+
+input.error {
+    border: 1px solid #dc3c23;
+    color: #dc3c23;
+}
+
+label.error {
+    color: #ff3111;
+    display: inline-block;
+}
+
+

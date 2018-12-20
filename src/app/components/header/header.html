@@ -1,0 +1,113 @@
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">
+        <i class="fas fa-globe-africa"></i>
+      <span>GIS Main Viewer </span>
+    </a>
+  
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav " id="menuList">
+        <!-- widget menu will be placed here-->
+      </ul>
+  
+    </div>
+    <ul class="navbar-nav mr-auto" id="rightMenu">
+      <li class="nav-item ">
+  
+        <a href="#" class="nav-link" id="fullScreen" title="">
+          <i class="ti-fullscreen"></i>
+        </a>
+  
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="far fa-bell"></i>
+          <span class="badge badge-pill badge-warning">5</span>
+        </a>
+        <div class="dropdown-menu notification-panel" aria-labelledby="navbarDropdown">
+          <div class="notification-header">notification</div>
+          <div class="notification-body">
+            <ul>
+              <li>
+                <div class="notif-icon notif-success">
+                  <i class="ti-check"></i>
+                </div>
+                <div class="notif-content">
+                  <div class="notif-title">Demande validé</div>
+                  <div class="notif-details">La demande 500HT50G a été validé</div>
+                  <div class="notif-date">6 minuts ago</div>
+                </div>
+              </li>
+              <li>
+                <div class="notif-icon notif-danger">
+                  <i class="ti-close"></i>
+                </div>
+                <div class="notif-content">
+                  <div class="notif-title">رفض الطلب</div>
+                  <div class="notif-details">La demande 589HT50G a été refusé</div>
+                  <div class="notif-date">2 months ago</div>
+                </div>
+              </li> 
+  
+              <li>
+                <div class="notif-icon notif-success">
+                  <i class="ti-check"></i>
+                </div>
+                <div class="notif-content">
+                  <div class="notif-title">Demande validé</div>
+                  <div class="notif-details">La demande 843HT50G a été validé</div>
+                  <div class="notif-date">6 days ago</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="notification-footer">
+            <a href="#">View all notifications</a>
+          </div>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="ti-user"></i>
+        </a>
+        <div class="dropdown-menu user-panel" aria-labelledby="navbarDropdown">
+          <div class="user-profile">
+            <div class="img-user">
+              <div class="img-container" data-toggle="tooltip" title="Tooltip on top">
+                  <img src="img/user3.png" alt="user picture">
+              </div>
+            </div>
+            <div class="user-details">
+              <div class="user-name">User user</div>
+              <div class="user-role">Administrator</div>
+            </div>
+          </div>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#" id="changeLanguage" i18n>
+            <i class="fa fa-language"></i>
+            <span>...</span>
+          </a>
+          <a class="dropdown-item" href="#">
+            <i class="ti-help-alt"></i>
+            <span>help</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">
+            <i class="fa fa-power-off"></i>
+            <span>Logout</span>
+          </a>
+        </div>
+      </li>
+      <li class="nav-item ">
+  
+        <a href="#" class="nav-link" id="toggleBaseGallery" title="Toggle side bar">
+          <i class="ti-layout-sidebar-right"></i>
+        </a>
+  
+      </li>
+    </ul>
+  </nav>
