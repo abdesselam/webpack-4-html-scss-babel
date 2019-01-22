@@ -3,11 +3,12 @@ import template  from './aside.html';
 
 export class Aside {
     constructor(){
+        console.log('------------------------------------------------------------------------------------------------------------------------Aside------')
         document.getElementById("aside").innerHTML = template;
         var asideTemplate = document.getElementById("aside");
   
     }
-    startup() {
+    startup() { 
 
 
         var basemapContainer = document.createElement("div");

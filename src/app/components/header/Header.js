@@ -3,6 +3,7 @@ import template from './Header.html'
 
 export class Header{
     constructor(){
+        console.log('------------------------------------------------------------------------------------------------------------------------Header------')
         document.getElementById("header").innerHTML = template;
         var headerTemplate = document.getElementById("header");
         console.log('----------header',headerTemplate.querySelector("#fullScreen"))
