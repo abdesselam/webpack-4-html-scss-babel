@@ -1,9 +1,10 @@
-import './Header.scss'
-import template from './Header.html'
+import './header.scss'
+import template from './header.html'
 
-export class Header{
+export class Header{ 
+    
     constructor(){
-        console.log('------------------------------------------------------------------------------------------------------------------------Header------')
+        console.log('---------------------------------------------------------------------------------------------------------------------Header------')
         document.getElementById("header").innerHTML = template;
         var headerTemplate = document.getElementById("header");
         console.log('----------header',headerTemplate.querySelector("#fullScreen"))
@@ -50,5 +51,6 @@ export class Header{
                             }
                         }
             }
+            
 }
 

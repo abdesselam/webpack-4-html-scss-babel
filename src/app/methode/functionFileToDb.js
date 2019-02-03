@@ -10,10 +10,10 @@ import MSANGeojson from '../../data/MSAN'
 
 export default function (){
     console.log('file to db------')
-                       fileToJson('http://41.111.133.106:3000/djezzy',djezzyGeojson.features);
-                       fileToJson('http://41.111.133.106:3000/ooredoo',ooredooGeojson.features);
-                       fileToJson('http://41.111.133.106:3000/algerieposte',algeriePosteGeojson.features);
-                       fileToJson('http://41.111.133.106:3000/lte',reseau4GLteGeojson.features);
-                       fileToJson('http://41.111.133.106:3000/msan',MSANGeojson.features);
-                       fileToJson('http://41.111.133.106:3000/lfo',fibreObtiqueGeojson.features);
+                       fileToJson('http://localhost:3000/djezzy',djezzyGeojson.features);
+                       fileToJson('http://localhost:3000/ooredoo',ooredooGeojson.features);
+                       fileToJson('http://localhost:3000/algerieposte',algeriePosteGeojson.features);
+                       fileToJson('http://localhost:3000/lte',reseau4GLteGeojson.features);
+                       fileToJson('http://localhost:3000/msan',MSANGeojson.features);
+                       fileToJson('http://localhost:3000/lfo',fibreObtiqueGeojson.features);
 }

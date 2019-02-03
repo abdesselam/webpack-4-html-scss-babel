@@ -8,7 +8,7 @@ export class Aside {
         var asideTemplate = document.getElementById("aside");
   
     }
-    startup() { 
+    startup() {  
 
 
         var basemapContainer = document.createElement("div");

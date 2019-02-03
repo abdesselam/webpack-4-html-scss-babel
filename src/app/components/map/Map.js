@@ -3,36 +3,59 @@ import { GeoSearchControl, OpenStreetMapProvider } from 'leaflet-geosearch';
 import 'leaflet-providers'
 import 'leaflet-draw'
 import '../../../../node_modules/leaflet-draw/dist/leaflet.draw.css'
-import basMap from '../../config/baseMap';
- 
-// import '../../../img/global.png';
-
-import ooredooGeojson from '../../../data/ooredoo'
-import ooredooImg from '../../../img/ooredoo.png'
-
-import djezzyGeojson from '../../../data/djezzy'
-import djezzyImg from '../../../img/djezzy.png'
-
-import algeriePosteGeojson from '../../../data/algeriePoste'
-import algeriePosteImg from '../../../img/algeriePoste.png'
-
-import reseau4GLteGeojson from '../../../data/reseau4GLte'
-import reseau4GLteImg from '../../../img/reseau4GLte.png'
-
-import fibreObtiqueGeojson from '../../../data/fibreObtique'
-
-import MSANGeojson from '../../../data/MSAN'
-import msanImg from '../../../img/msan.png'
 
 
 
 
-export class Map {       
+
+//import 'leaflet-groupedlayercontrol'
+ //import ExampleData from './exampledata'
+
+
+
+
+
+export class Map {   
+        
+        
+  
 
         constructor(mapPlaceholder,mapOptions){
         console.log('------------------------------------------------------------------------------------------------------------------------Map------')
 
         this.map = new L.Map(mapPlaceholder, mapOptions);
+
+//console.log('ExampleData-------------------',ExampleData)
+
+///------------------------------------------------------------------------------------------------------------
+         // Overlay layers are grouped
+     /*    
+    var groupedOverlays = {
+        "Landmarks": {
+          "Cities": ExampleData.LayerGroups.cities,
+          "Restaurants": ExampleData.LayerGroups.restaurants
+        },
+        "Random": {
+          "Dogs": ExampleData.LayerGroups.dogs,
+          "Cats": ExampleData.LayerGroups.cats
+        }
+      };
+  
+      var options = {
+        // Make the "Landmarks" group exclusive (use radio inputs)
+        exclusiveGroups: ["Landmarks"],
+        // Show a checkbox next to non-exclusive group labels for toggling all
+        groupCheckboxes: true
+      };
+  
+      // Use the custom grouped layer control, not "L.control.layers"
+      var layerControl = L.control.groupedLayers(ExampleData.Basemaps, groupedOverlays, options);
+      this.map.addControl(layerControl);
+      */
+///------------------------------------------------------------------------------------------------------------
+
+
+
  
 
                 //geosearch
@@ -103,7 +126,6 @@ export class Map {
                 return this.map;
                 
         }
-
 
 
 
